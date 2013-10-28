@@ -4,7 +4,7 @@ var express = require('express')
   , server = http.createServer(app)
   , io = require('socket.io').listen(server);
 
-server.listen(process.env.PORT || 5000);
+server.listen(process.env.PORT || 8080);
 io.set('loglevel',10); // set log level to get all debug messages
 
 io.configure(function () { 
@@ -23,7 +23,7 @@ app.get('/',function(req,res){  // route controller for index
 io.on('connection',function (socket) {
     socket.emit('load', 'connection made');
     socket.on('clientside event', function (data) {
-      var hashtag = ['#MODUSXMAS','#MODUSCRUISE','@ModusPR'];
+      var hashtag = ['#MODUSXMAS','#fashion','#bbc'];
       var tweeter = function(input) {
         socket.emit('tweet', input);
       }

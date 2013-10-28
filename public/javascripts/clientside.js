@@ -52,16 +52,15 @@ function rotateTweet(renderArray) {
     var tweet = '<li class="tweet future fly-simplified-li"><div>' 
         + '<h2>' + renderArray[arrayPointer].user.name + '</h2>' 
         + '<p>' + renderArray[arrayPointer].text + '</p>' 
-        + '<h3>&#64;' + renderArray[arrayPointer].user.screen_name + '<span>' + cleanDate + '</span></h3><hr/>'
+        + '<h3>&#64;' + renderArray[arrayPointer].user.screen_name + '<span>' + cleanDate + '</span></h3>'
         + '</div></li>';
 
-    $(tweet).appendTo('.tweetHolder').delay(800).show().toggleClass('future');
+    $(tweet).appendTo('.tweetHolder').show().toggleClass('future');
     if ( length === 3 ) {
         $('.tweet').first().toggleClass('fly-simplified-li').animate({
         height: "0px", margin: "0px", opacity: '0'
         },1600, function () {
           $(this).remove();
-          //$('ul hr').first().remove();
           console.log('end callback')
         });
     } 

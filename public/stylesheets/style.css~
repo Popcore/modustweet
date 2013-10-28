@@ -56,9 +56,8 @@ font-size:2.7vw;
 
 }
 .container hr {
-margin:0 1.5% 4%;
+margin:0 1.5% 1%;
 color:#fff;
-
 }
 
 h2 {
@@ -90,6 +89,7 @@ ul li {
  -webkit-opacity: 1;
  -moz-opacity: 1;
  /*opacity: 0.85;*/
+ border-radius:4px;
 }
 ul li:last-of-king {
   border-bottom:none;
@@ -108,11 +108,10 @@ ul li div{
  background:#F061E4;
 }
 
-.container ul hr {
-margin:2% 0 0;
+ul hr {
+
 color:#fff;
-color:#fff;
-/*adding-top:5%;*/
+padding-top:.5%;
 }
 
 
@@ -152,11 +151,11 @@ transform: translate3d( 0, -100px, -100px ) rotateX( 90deg );
 }
 
 .fly-simplified-li  {
--webkit-transition: all 1600ms ease,;
--moz-transition: all 1600ms ease;
--ms-transition: all 1600ms ease;
--o-transition: all 1600ms ease;
-transition: all 1600ms ease;
+-webkit-transition: all 1800ms ease,;
+-moz-transition: all 1800ms ease;
+-ms-transition: all 1800ms ease;
+-o-transition: all 1800ms ease;
+transition: all 1800ms ease;
 -webkit-transform-origin: 100% 50%;
 -moz-transform-origin: 100% 50%;
 -ms-transform-origin: 100% 50%;
