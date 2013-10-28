@@ -1,4 +1,4 @@
-modustweet
+tweetcycle
 ==========
 
-ModusTweet
+a tweet cycler
